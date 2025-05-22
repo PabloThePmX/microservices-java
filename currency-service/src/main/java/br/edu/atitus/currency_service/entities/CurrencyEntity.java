@@ -31,6 +31,9 @@ public class CurrencyEntity {
 	@Transient
 	private double convertedValue;
 
+	@Transient 
+	private String conversionDate;
+
 	public Long getId() {
 		return id;
 	}
@@ -79,5 +82,12 @@ public class CurrencyEntity {
 		this.convertedValue = convertedValue;
 	}
 	
+	public String getConversionDate() {
+		return conversionDate;
+	}
+
+	public void setConversionDate(String conversionDate) {
+		this.conversionDate = conversionDate;
+	}
 	
 }
