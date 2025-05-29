@@ -8,13 +8,11 @@ import org.springframework.stereotype.Component;
 public class CurrencyBCFallback implements CurrencyBCClient {
 
 	@Override
-	public CurrencyBCResponse getCotacaoMoedaDia(String moeda, String dataCotacao) {
+	public CurrencyBCResponse getCurrency(String moeda, String dataCotacao) {
 		
 		CurrencyBCResponse fallback = new CurrencyBCResponse();
 		fallback.setValue(Collections.emptyList());
 		
 		return fallback;
-	}
-
-	
+	}	
 }

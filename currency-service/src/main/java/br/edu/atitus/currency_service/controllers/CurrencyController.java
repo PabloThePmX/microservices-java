@@ -98,7 +98,7 @@ public class CurrencyController {
 	}
 	
 	private void setInformation(String dataSource, String source, String target, CurrencyEntity currency, double value) {
-		currency.setEnvironment("Currency-Service running on port: " + serverPort + " - DataSource - " + dataSource);
+		currency.setEnvironment("Currency-Service running on port: " + serverPort + " - DataSource: " + dataSource);
 		currency.setSource(source);
 		currency.setTarget(target); 
 		currency.setConvertedValue(value * currency.getConversionRate());
