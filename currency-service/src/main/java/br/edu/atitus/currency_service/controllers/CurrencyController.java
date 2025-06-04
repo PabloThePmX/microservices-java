@@ -15,7 +15,6 @@ import br.edu.atitus.currency_service.clients.CurrencyBCClient;
 import br.edu.atitus.currency_service.clients.CurrencyBCResponse;
 import br.edu.atitus.currency_service.entities.CurrencyEntity;
 import br.edu.atitus.currency_service.repositories.CurrencyRepository;
-import br.edu.atitus.currency_service.models.Currency;
 
 @RestController
 @RequestMapping("currency")
